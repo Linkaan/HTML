@@ -21,3 +21,29 @@ header {
 	top: 0;
 	left: 0;
 }
+
+html, body {
+	background-color: #99c76b;
+	height: 100%;
+}
+
+div {
+	display: block;
+	
+	font-size: 55px;
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	width: 50px;
+	height: 50px;
+	
+	border-radius: 50%;
+	
+	transition: all 0.3s;
+}
+
+
+
+
