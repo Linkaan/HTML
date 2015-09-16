@@ -1,33 +1,10 @@
-html {
-	background: #FFF;
-}
-
-body {
-	padding-top: 100px;
-}
-
-body,html {
-	margin: 0 !important;
-}
-
-header {
-	width: 100%;
-	font-family: sans-serif;
-	text-align: center;
-	background-color: #3399FF;
-	color: #FFF;
-	box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 5px 0 rgba(0,0,0,.23);
-	position: fixed;
-	top: 0;
-	left: 0;
-}
-
 html, body {
+	background: url('../img/bg.jpg');
 	background-color: #99c76b;
 	height: 100%;
 }
 
-div {
+div.boll {
 	display: block;
 	
 	font-size: 55px;
