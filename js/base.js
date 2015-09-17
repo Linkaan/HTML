@@ -5,30 +5,30 @@ function random(min, max) {
 var clicked = false;
 var isMoving = false;
 
-function moveButton(button) {
+function moveButton(boll) {
 	setTimeout(function() {
 		if (clicked || isMoving) return;
 
 		isMoving = true;
-		button.style.top = random(0, window.innerHeight - 50) + 'px';
-		button.style.left = random(0, window.innerWidth - 50) + 'px';
+		boll.style.top = random(0, window.innerHeight - 50) + 'px';
+		boll.style.left = random(0, window.innerWidth - 50) + 'px';
 	
-		button.innerHTML = "😱";
+		boll.innerHTML = "😱";
 		
 		setTimeout(function() {
 			isMoving = false;
 			if (clicked) return;
-			button.innerHTML = "😀";
+			boll.innerHTML = "😀";
 		}, 450);
-	}, 100);
+	}, 150);
 }
 
-function buttonClick(button) {
+function buttonClick(boll) {
 	clicked = true;
-	button.innerHTML = "😔";
+	boll.innerHTML = "😔";
 	setTimeout(function() {
 		clicked = false;
-		button.innerHTML = "😀";
-		moveButton(button);
+		boll.innerHTML = "😀";
+		moveButton(boll);
 	}, 2500);
 }
